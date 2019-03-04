@@ -26,7 +26,8 @@ app.get('/',function(req,res){
 
 app.get('/thomas',function(req,res){
 	res.render('thomas',{
-		today: new Date
+		today: new Date,
+		test: 'this test has been proven successful'
 	});
 });
 
