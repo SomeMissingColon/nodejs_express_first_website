@@ -1,0 +1,27 @@
+{
+  "name": "express_first_website",
+  "version": "1.0.0",
+  "description": "my first website using node and the express framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomeMissingColon/nodejs_express_first_website.git"
+  },
+  "keywords": [
+    "noob"
+  ],
+  "author": "Thomas Dion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SomeMissingColon/nodejs_express_first_website/issues"
+  },
+  "homepage": "https://github.com/SomeMissingColon/nodejs_express_first_website#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
