@@ -25,6 +25,9 @@ time, mark, audio, video {
 /* this is basically a template for when you're creating a new webiste, here for you to define the basic design patterns */
 
 /* Text alligning*/
+body {
+	background-color:#cecab1	;
+}
 .text-center {
 	text-align: center;
 }
