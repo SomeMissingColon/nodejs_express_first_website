@@ -1,0 +1,101 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/*basic classes*/
+/* this is basically a template for when you're creating a new webiste, here for you to define the basic design patterns */
+
+/* Text alligning*/
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align:left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+/*background-colors*/
+.background-color-blue {
+	background-color:#4286f4;
+}
+.background-color-red {
+	background-color:#f93959;
+}
+.background-color-green {
+	background-color:#61e85f;
+}
+.background-color-yellow {
+	background-color:#e1f22e;
+}
+.background-color-black {
+	background-color:#30302e;
+}
+.background-color-white {
+	background-color:#efefea;
+}
+.background-color-grey {
+	background-color:#b7b7ac;
+}
+
+
+/*text-colors*/
+.text-color-blue {
+	color:#4286f4;
+}
+.text-color-red {
+	color:#f93959;
+}
+.text-color-green {
+	color:#61e85f;
+}
+.text-color-yellow {
+	color:#e1f22e;
+}
+.text-color-black {
+	color:#30302e;
+}
+.text-color-white {
+	color:#efefea;
+}
+.text-color-grey {
+	color:#b7b7ac;
+}
+
+/*text-size */
+
+.text-size-small {
+	font-size:12px;
+}
+.text-size-medium {
+	font-size:16px;
+}
+.text-size-big {
+	font-size:24px;
+}
+.text-size-xxl {
+	font-size:40px;
+}
+
