@@ -1,0 +1,10 @@
+.nav-button {
+	margin:2px;
+	border:none;
+	padding: 5px;
+}
+
+.nav-button:hover {
+	border-bottom: 7px solid black;
+
+}

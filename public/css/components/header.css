@@ -6,17 +6,3 @@
 	border-bottom: 2px solid #30302e;
 }
 
-.nav-button {
-	margin:2px;
-	padding: 5px;
-}
-.nav-button a {
-	text-decoration: none;
-	color: #30302e;
-
-}
-.nav-button:hover {
-	border-bottom: 10px solid black;
-	transition-duration: 0.5s;
-
-}

@@ -2,11 +2,9 @@
 
 <%var buttons = ['contact info', 'Past projects', 'quirky js', 'about this site']%>
 
-<div id='header' class='background-color-white'>
-	<h1 class="text-size-big">Welcome to my website..</h1>
-	<ul id='nav-buttons' class='inline'>
-	<% buttons.forEach(function(button){ %>
-		<li class="inline nav-button"> <a class='text-size-big' href="#"> <%=button%> </a> </li> 
-	<% })%>
-	</ul>
+<div id='header' class='container-sm background-color-white'>
+  <div class="greeting">
+    <h1 class="text-size-big">Welcome to my website..</h1>
+  </div>
+
 </div>
