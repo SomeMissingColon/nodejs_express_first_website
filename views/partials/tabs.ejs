@@ -1,0 +1,42 @@
+
+<div id="navigation-bar">
+	<ul>	
+	 	<li class='nav-button'>
+	 		<a id="tab-contact-info" class="text-size-big" onclick="openTab('contact-info')">contact info</a>
+	 	</li>
+	 	<li class='nav-button'>
+	 		<a id="tab-past-projects" class="text-size-big" onclick="openTab('past-projects')">past projects</a>
+	 	</li>
+	 	<li class='nav-button'>
+	 		<a id="tab-about-website" class="text-size-big" onclick="openTab('about-website')">about website</a>
+	 	</li>
+ 	</ul>
+</div>
+
+
+<div id="contact-info" class="tab container">
+	  <%include contact-infos%>
+</div>
+
+
+<div id="past-projects" class="tab container" style="display:none">
+	  <%include past-projects%>
+</div>
+
+<div id="about-website" class="tab container" style="display:none">
+	<%include about-website%>
+</div>
+<script type="text/javascript">
+	function openTab(tabName) {
+  var i;
+  var x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  document.getElementById(tabName).style.display = "block"; 
+
+}
+</script>
+
+
+<!-- my code now-->

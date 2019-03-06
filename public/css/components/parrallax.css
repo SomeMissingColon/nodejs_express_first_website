@@ -1,0 +1,15 @@
+
+.parrallax{
+	background: url('http://robertwimer.com/wp-content/uploads/2018/06/Matrix-Code.jpg') no-repeat center;
+	background-size:cover;
+	background-attachment: fixed;
+	height:500px;
+	
+	left:00px;
+}
+
+.parrallax h1 {
+	background-color:rgba(0,0,0,0.4);
+	color:white;
+	font-size:45px;
+}

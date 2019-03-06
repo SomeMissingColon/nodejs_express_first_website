@@ -1,4 +1,6 @@
 
+
+ 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +27,10 @@ time, mark, audio, video {
 /* this is basically a template for when you're creating a new webiste, here for you to define the basic design patterns */
 
 /* Text alligning*/
+body {
+	background-color:white; 
+	font-family: 'Montserrat', sans-serif;
+}
 .text-center {
 	text-align: center;
 }
@@ -38,8 +44,12 @@ time, mark, audio, video {
 }
 
 /*background-colors*/
+.background-color-lightblue {
+	background-color:#2660A4;
+}
+
 .background-color-blue {
-	background-color:#4286f4;
+	background-color:#03256C;
 }
 .background-color-red {
 	background-color:#f93959;
@@ -54,7 +64,7 @@ time, mark, audio, video {
 	background-color:#30302e;
 }
 .background-color-white {
-	background-color:#efefea;
+	background-color:white;
 }
 .background-color-grey {
 	background-color:#b7b7ac;
@@ -99,3 +109,6 @@ time, mark, audio, video {
 	font-size:40px;
 }
 
+.inline {
+	display:inline;
+}
