@@ -2,27 +2,29 @@
 <div id="navigation-bar">
 	<ul>
 		<li class='nav-button'>
-	 		<a id="tab-landing" class="text-size-big" onclick="openTab('landing')">landing</a>
+	 		<a id="tab-landing" class="text-size-big active" onclick="activeTabButton('tab-landing'); openTab('landing')">landing</a>
 	 	</li>
 
 		<li class='nav-button'>
-	 		<a id="tab-about-website" class="text-size-big" onclick="openTab('about-website')">about website</a>
+	 		<a id="tab-about-website" class="text-size-big" onclick=" activeTabButton('tab-about-website'); openTab('about-website')">about website</a>
 	 	</li>
 
 	 	<li class='nav-button'>
-	 		<a id="tab-contact-info" class="text-size-big" onclick="openTab('contact-info')">contact info</a>
+	 		<a id="tab-contact-info" class="text-size-big" onclick="activeTabButton('tab-contact-info'); openTab('contact-info')">contact info</a>
 	 	</li>
 
 	 	<li class='nav-button'>
-	 		<a id="tab-past-projects" class="text-size-big" onclick="openTab('past-projects')">past projects</a>
+	 		<a id="tab-past-projects" class="text-size-big" onclick="activeTabButton('tab-past-projects'); openTab('past-projects'); ">past projects</a>
 	 	</li
 	 	>
 	 	
  	</ul>
 </div>
 
-
-<div id="contact-info" class="tab container">
+<div id="landing" class="tab container">
+	<%include landing%>
+</div>
+<div id="contact-info" class="tab container" style="display:none">
 	  <%include contact-infos%>
 </div>
 
@@ -34,17 +36,27 @@
 <div id="about-website" class="tab container" style="display:none">
 	<%include about-website%>
 </div>
+
+
+
 <script type="text/javascript">
 	function openTab(tabName) {
-  var i;
-  var x = document.getElementsByClassName("tab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  document.getElementById(tabName).style.display = "block"; 
+		var i;
+		var x = document.getElementsByClassName("tab");
+		for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none"; 
+	  	}
+	  	document.getElementById(tabName).style.display = "block"; 
+	};
 
-}
+	function activeTabButton(tabName) {
+		var tabs = ['tab-landing','tab-about-website','tab-contact-info','tab-past-projects'];
+		document.getElementById(tabName).classList.add("active");
+		tabs.splice(tabs.indexOf(tabName),1)
+		tabs.forEach(function(tab){
+			document.getElementById(tab).classList.remove("active");
+			console.log(tab)
+		}); 
+		
+	};
 </script>
-
-
-<!-- my code now-->

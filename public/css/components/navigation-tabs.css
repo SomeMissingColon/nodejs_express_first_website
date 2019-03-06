@@ -11,12 +11,22 @@
 	border:none;
 }
 
+.nav-button a {
+	padding:7px;
+}
+
 .nav-button:hover {
 	padding-left:40px;
 	transition-duration: 0.7s;
 }
 .nav-button:hover a  {
-	border-bottom: 4px solid rgba(0,0,0,0.8);
-	transition-delay: 0.7s;
-	transition-duration: 0.3s;
+	border-bottom: 3px solid rgba(0,0,0,0.8);
+	transition-delay: 0.2s;
+	transition-duration: 0.7s;
 }
+
+.active {
+	padding-right:5px;
+	border-right:3px solid rgba(0,0,0,0.8);
+}
+
