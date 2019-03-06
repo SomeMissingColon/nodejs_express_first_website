@@ -1,40 +1,40 @@
 
-<div class="w3-bar w3-black">
-  <a class="nav-button " onclick="openTab('contact-info')">contact info</a>
-  <a class="nav-button " onclick="openTab('past-projects')">past projects</a>
-  <a class="nav-button " onclick="openTab('about-webiste')">about webiste</a>
- 
+<div id="navigation-bar">
+	<ul>	
+	 	<li class='nav-button'>
+	 		<a id="tab-contact-info" class="text-size-big" onclick="openTab('contact-info')">contact info</a>
+	 	</li>
+	 	<li class='nav-button'>
+	 		<a id="tab-past-projects" class="text-size-big" onclick="openTab('past-projects')">past projects</a>
+	 	</li>
+	 	<li class='nav-button'>
+	 		<a id="tab-about-website" class="text-size-big" onclick="openTab('about-website')">about website</a>
+	 	</li>
+ 	</ul>
 </div>
 
 
-<div id="contact-info" class="city">
-	  <h2>Contact me!</h2>
-
-	  <p>Email: <a href="thomasnoidion@gmail.com">thomasnoidion@gmail.com</a></p>
-
-	  <p>Linkedin: <a href="https://www.linkedin.com/in/thomas-dion-a75ba2158"><i class="fab fa-linkedin-in"></i></a></p>
-
-	  <p>Phone Number: 514-745-8268</p>
+<div id="contact-info" class="tab container">
+	  <%include contact-infos%>
 </div>
 
 
-<div id="past-projects" class="city" style="display:none">
-	  <h2>Past projects</h2>
-	  <p>Past projects tab.</p> 
+<div id="past-projects" class="tab container" style="display:none">
+	  <%include past-projects%>
 </div>
 
-<div id="about-webiste" class="city" style="display:none">
-  <h2>about webiste</h2>
-  <p>about webiste tab.</p>
+<div id="about-website" class="tab container" style="display:none">
+	<%include about-website%>
 </div>
 <script type="text/javascript">
 	function openTab(tabName) {
   var i;
-  var x = document.getElementsByClassName("city");
+  var x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
   document.getElementById(tabName).style.display = "block"; 
+
 }
 </script>
 
