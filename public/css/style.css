@@ -29,6 +29,7 @@ time, mark, audio, video {
 /* Text alligning*/
 body {
 	background-color:white; 
+	font-family: 'Montserrat', sans-serif;
 }
 .text-center {
 	text-align: center;
