@@ -2,7 +2,6 @@
 
 	margin: 10px;
 	list-style:none;
-	max-width:15%;
 }
 
 .nav-button {
@@ -26,12 +25,14 @@
 	transition-duration: 0.7s;
 }
 .tab-unactive {
-	margin-left:200%;
+	transition-duration: 0.7s;
+	margin-left:110%;
+
 }
 .tab-active {
+
 	transition-duration: 0.7s;
-	margin-left:20%;
-	
+	margin-left:0%!important;
 }
 
 .tab{
