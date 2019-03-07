@@ -1,5 +1,6 @@
 #navigation-bar li{
-	margin-bottom: 10px;
+
+	margin: 10px;
 	list-style:none;
 	max-width:10%;
 }
@@ -20,13 +21,28 @@
 	transition-duration: 0.7s;
 }
 .nav-button:hover a  {
-	border-bottom: 3px solid rgba(0,0,0,0.8);
+	border-bottom: 3px solid rgba(100,100,100,0.5);
 	transition-delay: 0.2s;
 	transition-duration: 0.7s;
 }
+.tab-unactive {
+	margin-left:200%;
+}
+.tab-active {
+	transition-duration: 1s;
+	margin-left:10%;
+	
+}
 
+.tab{
+	position: absolute;
+	top:10%;
+}
 .active {
 	padding-right:5px;
-	border-right:3px solid rgba(0,0,0,0.8);
+
+	border-bottom:3px solid rgba(0,0,0,0.8);
+	transition-duration: 0.5s;
 }
+
 

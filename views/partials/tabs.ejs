@@ -21,19 +21,19 @@
  	</ul>
 </div>
 
-<div id="landing" class="tab container">
+<div id="landing" class="tab container tab-active"> 
 	<%include landing%>
 </div>
-<div id="contact-info" class="tab container" style="display:none">
+<div id="contact-info" class="tab container tab-unactive">
 	  <%include contact-infos%>
 </div>
 
 
-<div id="past-projects" class="tab container" style="display:none">
+<div id="past-projects" class="tab container tab-unactive">
 	  <%include past-projects%>
 </div>
 
-<div id="about-website" class="tab container" style="display:none">
+<div id="about-website" class="tab container tab-unactive">
 	<%include about-website%>
 </div>
 
@@ -44,9 +44,13 @@
 		var i;
 		var x = document.getElementsByClassName("tab");
 		for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none"; 
+		    x[i].classList.remove("tab-active")
+	  		x[i].classList.add("tab-unactive")
 	  	}
-	  	document.getElementById(tabName).style.display = "block"; 
+	  	document.getElementById(tabName).style.display = "block";
+
+	  	document.getElementById(tabName).classList.remove("tab-unactive") 
+	  	document.getElementById(tabName).classList.add("tab-active")
 	};
 
 	function activeTabButton(tabName) {
