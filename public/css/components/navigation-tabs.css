@@ -25,13 +25,12 @@
 	transition-duration: 0.7s;
 }
 .tab-unactive {
-	transition-duration: 0.7s;
+	transition-duration: 0.9s;
 	margin-left:110%;
-
 }
-.tab-active {
 
-	transition-duration: 0.7s;
+.tab-active {
+	transition-duration: 0.9s;
 	margin-left:0%!important;
 }
 
