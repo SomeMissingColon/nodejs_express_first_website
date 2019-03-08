@@ -46,15 +46,16 @@
 		var i;
 		var x = document.getElementsByClassName("tab");
 		for (i = 0; i < x.length; i++) {
-			var element = x[i]
-			element.classList.remove("tab-active")
-	  		element.classList.add("tab-unactive")
+			let element = x[i]
+			x[i].classList.remove("tab-active")
+	  		x[i].classList.add("tab-unactive")
 	  		setTimeout(function(){
 	  			element.style.display = 'none'
-	  			console.log("nonafy")
+	  			console.log(element)
 	  		},700);
 	  	}
 
+	  	
 	  	setTimeout(function(){
 	  		document.getElementById(tabName).style.display = 'block'
 	  	},750);
@@ -63,9 +64,6 @@
 	  		
 	  		document.getElementById(tabName).classList.add("tab-active")
 	  	}, 800);
-
-
-	  	
 
 	  
 	 
