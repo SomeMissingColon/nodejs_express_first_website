@@ -2,18 +2,17 @@
 
 	margin: 10px;
 	list-style:none;
-	max-width:10%;
 }
 
 .nav-button {
 	margin-left:20px;
 	transition-duration: 0.7s;
-	margin-bottom:20px;
+	margin-bottom:10px;
 	border:none;
 }
 
 .nav-button a {
-	padding:7px;
+	padding:1px;
 }
 
 .nav-button:hover {
@@ -26,15 +25,17 @@
 	transition-duration: 0.7s;
 }
 .tab-unactive {
-	margin-left:200%;
+	transition-duration: 0.9s;
+	margin-left:110%;
 }
+
 .tab-active {
-	transition-duration: 1s;
-	margin-left:10%;
-	
+	transition-duration: 0.9s;
+	margin-left:0%!important;
 }
 
 .tab{
+	margin-bottom:8%;
 	position: absolute;
 	top:10%;
 }

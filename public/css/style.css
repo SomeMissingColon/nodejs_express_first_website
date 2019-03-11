@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css?family=Nunito")
 
  
 html, body, div, span, applet, object, iframe,
@@ -29,7 +29,12 @@ time, mark, audio, video {
 /* Text alligning*/
 body {
 	background-color:white; 
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	overflow-x: hidden;
+}
+body p {
+	font-size:20;
+
 }
 .text-center {
 	text-align: center;
@@ -111,4 +116,15 @@ body {
 
 .inline {
 	display:inline;
+}
+
+.text-content {
+	margin-top:40px;
+	border: 4px solid #007CFA;
+	border-radius: 4px;
+	padding:5px;
+}
+
+.tab-title {
+	text-decoration: underline;
 }
